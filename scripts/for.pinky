@@ -1,0 +1,16 @@
+println "for.pinky"
+
+x := 5
+y := 1
+
+func log(prefix, value)
+  println prefix + ": " + value
+end
+
+func start()
+  for i := 1, 10 + x, 2 do
+    log("i", i + y)
+  end
+end
+
+start()

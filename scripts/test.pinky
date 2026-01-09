@@ -1,0 +1,34 @@
+-- Prueba exhaustiva para el Lexer y Parser
+saludo := "Hola, testeando Pinky..."
+print saludo
+
+limite := 100
+contador := 0
+paso := 2
+
+print "Iniciando bucle de prueba:"
+
+while contador < limite do
+  if contador == 50 then
+    print "Estamos a la mitad"
+  elif contador >= 90 then
+    print "Casi terminamos..."
+  end
+
+  -- Prueba de operadores compuestos y expresiones
+  contador := contador + (paso * 5)
+
+  if contador ~= 0 and contador <= 100 then
+    print contador
+  end
+end
+
+func calcular(a, b)
+  resultado := (a ^ 2) / (b - 1)
+  ret resultado
+end
+
+print "Resultado final de la funcion:"
+print calcular(10, 5)
+
+print "Test finalizado con exito."

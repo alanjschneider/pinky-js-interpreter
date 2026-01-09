@@ -1,0 +1,37 @@
+-- Programa: Conversor de Clima
+-- Utilidad: Genera una tabla de conversion y evalua el estado
+
+println "--- TABLA DE TEMPERATURAS ---"
+
+local inicio := 0
+local fin := 40
+local paso := 10
+
+while inicio <= fin do
+  -- Formula: (Celsius * 9/5) + 32
+  local fahrenheit := (inicio * 9 / 5) + 32
+
+  println "Celsius:"
+  println inicio
+  println "Fahrenheit:"
+  println fahrenheit
+
+  -- Evaluacion del clima usando tu nuevo 'elif'
+  if inicio <= 10 then
+    println "Estado: Frio"
+  elif inicio <= 25 then
+    println "Estado: Templado"
+  else
+    println "Estado: Caluroso"
+  end
+
+  println "---------------------------"
+  inicio := inicio + paso
+end
+
+func calcularPromedio(c1, c2)
+  ret (c1 + c2) / 2
+end
+
+println "Promedio de la operacion:"
+println calcularPromedio(0, 40)

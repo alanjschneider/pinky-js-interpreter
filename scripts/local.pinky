@@ -1,0 +1,9 @@
+y := 20
+
+func doSomething()
+  local x := 10
+  print "func: " + x
+end
+
+doSomething()
+print "outside: " + x

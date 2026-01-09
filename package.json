@@ -1,0 +1,20 @@
+{
+  "name": "pinky",
+  "version": "1.0.0",
+  "main": "Lexeme.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "pinky": "node index.js",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vitest": "^4.0.16"
+  }
+}

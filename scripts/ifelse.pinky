@@ -1,0 +1,13 @@
+func evaluateNumber(number)
+  if number > 0 then
+    println "number " + number + " is positive"
+  elif number < 0 then
+    println "number " + number + " is negative"
+  else
+    println "number " + number + " is zero"
+  end
+end
+
+evaluateNumber(-100)
+evaluateNumber(0)
+evaluateNumber(4)

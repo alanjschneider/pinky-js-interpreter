@@ -1,0 +1,27 @@
+a := 20
+println "a: " + a
+local z := 399
+
+func thing(a)
+  local z := 10
+  println "thin() z: " + z
+  println "thin() a: " + a
+
+  func inner()
+    a := 12
+    println "inner() a: " + a
+    a := 0
+  end
+
+  inner()
+  println "thin() a: " + a
+end
+
+func modify()
+  a := 22
+end
+
+modify()
+thing(4)
+println "z: " + z
+println "a: " + a
